@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lexend:wght@600;700;800&display=swap" rel="stylesheet"> 
+    <!-- Glider Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="hero__nav">
+            <h2 class="h2--nav">&lt;/bstm&gt;</h2>
+            <ul class="hero__nav--items" >
+                <a href="#hero"><li>Inicio</li></a>
+                <a href="#acercade"><li>Acerca de</li></a>
+                <a href="#proceso"><li>Proceso de trabajo</li></a>
+                <a href="#trabajos"><li>Portafolio</li></a>
+                <a class="btn__container" href="#form">
+                    <div class="gradiente__texto">Contáctame</div>
+                </a>
+            </ul>
+            <div class="hero__dropdown">
+                <img src="img/dropdown.svg" alt="dropdown" class="hero__dropdown--img">
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" >
+        <div class="container">
+            <div class="hero__contenido">
+                <h1 class="hero__titulo">
+                    <span class="hero__titulo--texto">
+                      <span class="letters">Hola, soy Bastián</span>
+                    </span>
+                  </h1>
+                <h4 class="mb-4">Tu próximo desarrollador y diseñador web.</h4>
+                <div class="hero__btn--wrapper">
+                    <a href="#"class="btn__container btn__container--borde text-center" >
+                        <span class="gradiente__texto">Hablemos</span>
+                    </a>
+                    <a href="#" class="gradiente__texto">> Proyectos realizados</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Acerca de mi -->
+  
+    <section id="acercade">
+        <div class="container acercade__flex">
+            <div class="acercade__mi">
+                <h3 class="mb-2">Acerca de mí</h3>
+                <hr class="hr--1">
+                <p>
+                    Soy una persona muy interesada por lo que hace: <strong>diseñar y programar</strong>. 
+                </br>
+            </br>
+                    Conocí el mundo del desarrollo web entrando a la carrera de Desarrollo y Diseño Web en Duoc UC en el año 2020. Cuando por fin hice mi primer sitio web en HTML quedé encantado con la creación de sitios web. Esto me hizo querer aprender más, y ver sitios web bonitos para guiarme, lo cual también despertó un gran <strong>interés por el diseño</strong>, donde tambien comencé explorar más y a aprender por cuenta propia.
+                </br>
+            </br>
+                    Mi <strong>conocimiento de inglés avanzado</strong> me ayudó bastante con mis aprendizajes autónomos, debido a la gran variedad de contenido disponible en este idioma, usando desde artículos hasta cursos gratuitos.
+                </br>
+            </br>
+                    Actualmente me considero alguien con fundamentos muy sólidos del diseño y alguien con muy buena “mano” para hacer sitios web.
+                </p>
+            </div>
+
+            <div class="acercade__certif">
+                <h3 class="mb-2">Mis certificaciones</h3>
+                <hr class="hr--1">
+
+                <div class="certificaciones">
+                    <span class="certificacion">HTML</span>
+                    <span class="certificacion">CSS</span>
+                    <span class="certificacion">JavaScript</span>
+                    <span class="certificacion">Bootstrap</span>
+                    <span class="certificacion">WordPress</span>
+                    <span class="certificacion">jQuery</span>
+                    <span class="certificacion">WooCommerce</span>
+                    <span class="certificacion">Elementor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herramientas de trabajo -->
+
+    <section id="herramientas">
+        <div class="container">
+            <div class="herramientas__titulo">
+                <h2>Mis herramientas de trabajo</h2>
+                <hr class="hr--2">
+            </div>
+
+            <div class="herramientas__slider">
+                <div class="herramientas__slider--contenido">
+                    <button aria-label="Anterior" class="herramientas__slider--anterior">
+                        <img src="img/flecha_izq.svg" alt="Flecha izquierda">
+                    </button>
+
+                    <div class="slider__lista">
+                        
+                        <div class="slider__lista--elemento">
+                            <img src="img/trello.png" alt="Trello" class="slider__icono">
+                            <h4>Trello</h4>
+                            <p>Mi herramienta preferida para organizar tareas y tiempos. También muy útil para trabajos en equipo.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/figma.svg" alt="Figma" class="slider__icono">
+                            <h4>Figma</h4>
+                            <p>Herramienta colaborativa para creación de interfaces y maquetas. Permite mostrar al cliente cómo se verá el sitio antes de hacerlo.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/notion.svg" alt="Notion" class="slider__icono">
+                            <h4>Notion</h4>
+                            <p>Otra herramienta útil para organizar tiempos y tareas por hacer con más elementos didácticos.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/github.svg" alt="Github" class="slider__icono">
+                            <h4>Github</h4>
+                            <p>El sitio web donde puedo subir y alojar los trabajos que hago.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/discord.png" alt="Discord" class="slider__icono">
+                            <h4>Discord</h4>
+                            <p>Herramienta principal de comunicación.
+                                Más ordenada y organizable que otras aplicaciones de mensajería.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/vscode.png" alt="VS Code" class="slider__icono">
+                            <h4>Visual Studio Code</h4>
+                            <p>Mi editor de código. Herramienta obvia.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/gdrive.png" alt="Google Drive" class="slider__icono">
+                            <h4>Google Drive</h4>
+                            <p>Mi gestor de archivos por preferencia. Ideal para compartir archivos y trabajar en equipos.
+                            </p>
+                        </div>
+                        <div class="slider__lista--elemento">
+                            <img src="img/photoshop.svg" alt="Photoshop" class="slider__icono">
+                            <h4>Photoshop</h4>
+                            <p>Herramienta que utilizo para edición de fotografías y compresión de imágenes.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <button aria-label="Siguiente" class="herramientas__slider--siguiente">
+                        <img src="img/flecha_der.svg" alt="Flecha izquierda">
+                    </button>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de trabajo -->
+
+    <section id="proceso">
+        <div class="container">
+            <div class="proceso__titulo">
+                <h2>Mi proceso de trabajo</h2>
+                <hr class="hr--2">
+            </div>
+            <div class="proceso__container">
+                <div class="proceso__container--contenido">
+                    <h4>1.- Análisis de usuario y benchmark</h4>
+                    <hr class="hr--3">
+                    <p>Un buen proyecto comienza haciendo un análisis de usuario para definir el público objetivo y la identidad de la marca (Solo si esto no está definido antes). Luego se hace un análisis comparativo de distintos referentes, para saber qué hacen bien y qué cosas están demás.</p>
+                </div>
+                <div class="proceso__container--contenido">
+                    <h4>2.- Brainstorming y propuestas de diseño</h4>
+                    <hr class="hr--3">
+                    <p>Una vez realizados los análisis, hago una lluvia de ideas para poder realizar múltiples propuestas de diseño y otorgar múltiples soluciones. Teniendo las ideas solidificadas, realizo propuestas de diseño al cliente para llegar a un acuerdo para decidir cuál es la que le parece mejor.</p>
+                </div>
+                <div class="proceso__container--contenido">
+                    <h4>3.- Prototipado del diseño</h4>
+                    <hr class="hr--3">
+                    <p>Para entregar una mejor idea de cómo será el sitio al final, se realiza un prototipo del diseño propuesto, con funcionalidades y efectos visuales en este. Se realizan testeos de funcionalidad con múltiples usuarios para luego corregir posibles errores o fallas en el diseño.</p>
+                </div>
+                <div class="proceso__container--contenido">
+                    <h4>4.- Programación del sitio</h4>
+                    <hr class="hr--3">
+                    <p>Luego de ser testeado el prototipo, se comienza con la programación del sitio, replicando directamente la maqueta utilizada.</p>
+                </div>
+                <div class="proceso__container--contenido">
+                    <h4>5.- Testeo y correcciones finales</h4>
+                    <hr class="hr--3">
+                    <p>Al terminar de programar, se sube el sitio web al hosting correspondiente y se asocia al dominio solicitado. Luego se prueba el sitio web estando en linea para posteriormente realizar las correcciones finales.</p>
+                </div>
+                <div class="proceso__container--contenido">
+                    <h4>6.- Entrega</h4>
+                    <hr class="hr--3">
+                    <p>Cuando se comprueba que el funcionamiento del sitio es el correcto, se entrega el sitio web al cliente, junto con el hosting y dominio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trabajos -->
+
+    <section id="trabajos">
+        <div class="container">
+            <div class="trabajos__titulo">
+                <h2>Mis trabajos realizados</h2>
+                <hr class="hr--2">
+            </div>
+
+            <!-- Trabajo 1 -->
+
+            <!-- Tabs ---------------------------->
+
+            <div class="tabs">
+                <div class="tabs__navegacion" id="tab__content">
+                    <!-- 1 -->
+                    <a class="tabs__btn" data-btn-tab="1">
+                        <div class="tabs__btn--container">
+                            <img class="tabs__btn--img" src="img/axit.jpg" alt="">
+                            <div class="tabs__btn--card">
+                                <h4>Axit PSD</h4>
+                                <p>Plantilla replicada con HTML, CSS, JavaScript y Bootstrap</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 2 -->
+                    <a href="#tab__content" class="tabs__btn" data-btn-tab="2">
+                        <div class="tabs__btn--container">
+                            <img class="tabs__btn--img" src="img/gd.jpg" alt="">
+                            <div class="tabs__btn--card">
+                                <h4>Piroll</h4>
+                                <p>Plantilla replicada con HTML, CSS y Bootstrap</p>
+                            </div>
+                         </div>
+                    </a>
+                    <!-- 3 -->
+                    <a href="#tab__content" class="tabs__btn" data-btn-tab="3">
+                        <div class="tabs__btn--container">
+                            <img class="tabs__btn--img" src="img/gd.jpg" alt="">
+                            <div class="tabs__btn--card">
+                                <h4>Digital Golden</h4>
+                                <p>Sitio web en WordPress hecho con Elementor y diseñado desde 0</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 4 -->
+                    <a href="#tab__content" class="tabs__btn" data-btn-tab="3">
+                        <div class="tabs__btn--container">
+                            <img class="tabs__btn--img" src="img/gd.jpg" alt="">
+                            <div class="tabs__btn--card">
+                                <h4>Digital Golden</h4>
+                                <p>Sitio web en WordPress hecho con Elementor y diseñado desde 0</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 5 -->
+                    <a href="#tab__content" class="tabs__btn" data-btn-tab="3">
+                        <div class="tabs__btn--container">
+                            <img class="tabs__btn--img" src="img/gd.jpg" alt="">
+                            <div class="tabs__btn--card">
+                                <h4>Digital Golden</h4>
+                                <p>Sitio web en WordPress hecho con Elementor y diseñado desde 0</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Contenidos -->
+
+                <div class="tabs__container" data-tab="1">
+
+                        <!-- 1 -->
+                    <div class="trabajos__wrap">
+                        <div class="trabajos__wrap--col">
+                            <img src="https://unsplash.it/500/600" alt="">
+                        </div>
+                        <div class="trabajos__wrap--col">
+                            <h3 class="trabajos__trabajo--titulo">Axit PSD</h3>
+                            <hr class="hr--3 trabajos__trabajo--hr">
+                            <p class="trabajos__trabajo--p">Axit PSD es una plantilla gratuita para landing pages hecha en Photoshop. Se tuvo la tarea de replicarla utilizando solamente HTML y CSS, sin responsive.<br>
+                                Luego de hacerlo como tarea, decidí tomar la tarea nuevamente para comenzarla desde 0, utilizando BootStrap y media queries para el responsive y JavaScript para pequeñas interacciones que tiene la página.   </p>
+                            <div class="trabajos__wrap--btn">
+                                <a href="https://aerith626.github.io/axit-psd/" target="_blank" class="btn__container btn__container--borde text-center" >
+                                    <span class="gradiente__texto">Ver sitio</span>
+                                </a>
+            
+                                <a href="#"class="btn__container btn__container--borde text-center" >
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tabs__container" data-tab="2">
+
+                    <div class="tabs__contenido">
+                        
+                        <h2>hola</h2>
+                        <p>comos estas</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="container">
+            <div class="form__titulo">
+                <h2>Contáctame</h2>
+                <hr class="hr--2">
+            </div>
+
+            <div class="form__wrap">
+                <div class="form__col form__col-l">
+                    <h3 class="mb-2">Formulario de contacto</h3>
+                    <p class="mb-4">Rellena este pequeño formulario para contactarte conmigo. Responderé apenas me sea posible.</p>
+                    <form class="formulario__contacto" action="">
+                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre">
+                        <input placeholder="Correo" class="formulario__input" type="email" id="correo">
+                        <textarea placeholder="Mensaje" class="formulario__textarea" name="textarea" id="" cols="30" rows="10"></textarea>
+                        <button class="formulario__btn" type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="form__col form__col-r">
+                    <h3>¿No te acomoda?</h3>
+                    <p><strong>También puedes contactarme a través de los siguientes medios:</strong></p>
+                    <ul>
+                        <li>+56 9 3718 2566</li>
+                        <li>ba.montes@duocuc.cl</li>
+                    </ul>
+                    <ul class="form__lista--iconos">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+</body>
+<!-- Anime JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Glider JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js" integrity="sha512-tHimK/KZS+o34ZpPNOvb/bTHZb6ocWFXCtdGqAlWYUcz+BGHbNbHMKvEHUyFxgJhQcEO87yg5YqaJvyQgAEEtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Animate on Scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- JS -->
+<script src="js/script.js"></script>
+</html>
