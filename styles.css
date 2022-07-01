@@ -473,6 +473,9 @@ section {
     object-fit: cover;
     opacity: .5;
     transition: 200ms ease opacity;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
 }
 .tabs__btn:hover .tabs__btn--img {
     opacity: .2;
@@ -487,6 +490,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    
 }
 
 .tabs__btn--card h4 {
@@ -529,6 +533,7 @@ section {
 
 
 /* Formulario */
+
 
 .form__wrap {
     display: grid;

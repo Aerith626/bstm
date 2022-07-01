@@ -16,6 +16,8 @@ anime.timeline({loop: false})
 window.addEventListener('load', function () {
   new Glider(document.querySelector('.slider__lista'), {
     slidesToShow: 1,
+    dragVelocity: 9,
+    duration: .3,
     draggable: true,
     arrows: {
       prev: '.herramientas__slider--anterior',
