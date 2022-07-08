@@ -16,11 +16,16 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    scroll-margin-top: 100px;
 }
 /* Rem */
 
 html {
     font-size: 15px;
+}
+
+body {
+     text-rendering: optimizeSpeed;
 }
 /* Variables */
 
@@ -77,17 +82,12 @@ a {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 li {
     list-style: none;
-}
-
-a, li {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: 700;
 }
 
 p {
@@ -103,6 +103,11 @@ strong {
     font-weight: 700;
     color: var(--str-clr);
     line-height: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .btn__container {
@@ -174,7 +179,6 @@ section {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 20px;
-    overflow: hidden;
 }
 
 #hero {
@@ -186,7 +190,8 @@ section {
 
 .h2--nav {
     margin: auto 0  !important;
-    font-size: 26px;
+    font-size: 30px;
+    color: white;
 }
 
 .header {
@@ -403,6 +408,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 2em;
+}
+
+.trabajos__wrap--col img {
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.25)
 }
 
 .trabajos__trabajo--titulo {
@@ -573,11 +583,13 @@ section {
 
 .form__col-r p {
     margin-bottom: 2em;
+    font-size: 16px;
 }
 
 .form__col-r ul li {
     font-weight: 400;
-    text-transform: initial
+    text-transform: initial;
+    font-size: 16px;
 }
 
 .formulario__input, .formulario__textarea {
@@ -684,7 +696,13 @@ section {
     }
 }
 
+
+/* Celulares */
+
+
+
 @media screen and (max-width: 480px) {
+
     .form__wrap {
         display: flex;
         flex-direction: column;
@@ -702,14 +720,19 @@ section {
         padding: 1em;
         aspect-ratio: 1;
     }
-}
 
+    .hero__nav--items {
+        width: 100%;
+    }
 
-/* Celulares */
-
-
-
-@media screen and (max-width: 480px) {
+    .hero__nav--items .btn__container {
+        background: none;
+        color: white;
+    }
+    .hero__nav--items .gradiente__texto {
+        background: white;
+        background-clip: text
+    }
     
     .container, header {
         padding: 0 24px;
@@ -731,7 +754,6 @@ section {
     }
     
     .tabs__navegacion {
- 
         grid-auto-columns: 80%;
     }
 }
