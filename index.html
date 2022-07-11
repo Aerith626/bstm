@@ -16,7 +16,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
@@ -38,8 +38,8 @@
         </nav>
     </header>
 
-    <section id="hero" >
-        <div class="container">
+    <section id="hero" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
+        <div class="container" >
             <div class="hero__contenido">
                 <h1 class="hero__titulo">
                     <span class="hero__titulo--texto">
@@ -60,8 +60,8 @@
     <!-- Acerca de mi -->
   
     <section id="acercade">
-        <div class="container acercade__flex">
-            <div class="acercade__mi">
+        <div class="container acercade__flex" >
+            <div class="acercade__mi" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
                 <h3 class="mb-2">Acerca de mí</h3>
                 <hr class="hr--1">
                 <p>
@@ -78,7 +78,7 @@
                 </p>
             </div>
 
-            <div class="acercade__certif">
+            <div class="acercade__certif"   data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
                 <h3 class="mb-2">Mis certificaciones</h3>
                 <hr class="hr--1">
 
@@ -98,7 +98,7 @@
 
     <!-- Herramientas de trabajo -->
 
-    <section id="herramientas">
+    <section id="herramientas" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
             <div class="herramientas__titulo">
                 <h2>Mis herramientas de trabajo</h2>
@@ -179,7 +179,7 @@
 
     <!-- Proceso de trabajo -->
 
-    <section id="proceso">
+    <section id="proceso" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" data-aos-once="true" data-aos-anchor=".herramientas__slider">
         <div class="container">
             <div class="proceso__titulo">
                 <h2>Mi proceso de trabajo</h2>
@@ -222,7 +222,7 @@
 
     <!-- Trabajos -->
 
-    <section id="trabajos">
+    <section id="trabajos" data-aos="fade-in" data-aos-duration="600" data-aos-once="true" data-aos-anchor=".proceso__container">
         <div class="container">
             <div class="trabajos__titulo">
                 <h2>Mis trabajos realizados</h2>
@@ -409,7 +409,7 @@
         </div>
     </section>
 
-    <section id="form">
+    <section id="form" data-aos="fade-up" data-aos-anchor=".tabs__container" data-aos-once="true">
         <div class="container">
             <div class="form__titulo">
                 <h2>Contáctame</h2>
@@ -421,11 +421,17 @@
                     <h3 class="mb-2">Formulario de contacto</h3>
                     <p class="mb-4">Rellena este pequeño formulario para contactarte conmigo. Responderé apenas me sea posible.</p>
                     <form class="formulario__contacto" id="formulario">
-                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre" name="name" required>
-                        <input placeholder="Correo" class="formulario__input" type="email" id="correo" name="email" required>
-                        <textarea placeholder="Mensaje" class="formulario__textarea" name="textarea" id="" cols="30" rows="10" name="message" required></textarea>
+                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre" name="name">
+                        <input placeholder="Correo" class="formulario__input" type="email" id="correo" name="email" >
+                        <textarea placeholder="Mensaje" class="formulario__textarea" name="textarea" id="" cols="30" rows="10" name="message"></textarea>
                         <input id="form__btn" class="formulario__btn" type="submit" value="Enviar mensaje">
                     </form>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                    <script type="text/javascript">
+                                (function(){
+                                    emailjs.init("vsw7TGagG_qo-0QKs");
+                                })();
+                    </script>
                 </div>
                 <div class="form__col form__col-r">
                     <h3>¿No te acomoda?</h3>
@@ -440,15 +446,7 @@
                     </ul>
                 </div>
             </div>
-            <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-            </script>
-            <script type="text/javascript">
-            (function(){
-                emailjs.init("vsw7TGagG_qo-0QKs");
-            })();
-            </script>
-
+            
         </div>
     </section>
 
@@ -457,12 +455,17 @@
 
     
 </body>
+
+
 <!-- Anime JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Glider JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js" integrity="sha512-tHimK/KZS+o34ZpPNOvb/bTHZb6ocWFXCtdGqAlWYUcz+BGHbNbHMKvEHUyFxgJhQcEO87yg5YqaJvyQgAEEtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Animate on Scroll -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <!-- JS -->
 <script src="js/script.js"></script>
 </html>
