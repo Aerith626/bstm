@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var formBtn = document.getElementById('form__btn');
 document.getElementById('formulario').addEventListener('submit', function(event) {
-  event.preventDefault;
+  event.preventDefault();
   formBtn.value = 'Enviando...';
 
   const serviceID = 'service_0dxj06y';
