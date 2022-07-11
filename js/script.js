@@ -147,6 +147,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
   emailjs.sendForm(serviceID, templateID, this)
   .then(()=> {
     formBtn.value = 'Enviar Mensaje';
+    alert('Mensaje enviado correctamente');
   }), (err) => {
     formBtn.value = 'Enviar Mensaje';
     alert(JSON.stringify(err));
