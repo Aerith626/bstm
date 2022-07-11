@@ -33,7 +33,7 @@
                 </a>
             </ul>
             <div class="hero__dropdown">
-                <img src="img/dropdown.svg" alt="dropdown" class="hero__dropdown--img">
+                <img src="img/dropdown.png" alt="dropdown" class="hero__dropdown--img">
             </div>
         </nav>
     </header>
@@ -45,13 +45,13 @@
                     <span class="hero__titulo--texto">
                       <span class="letters">Hola, soy Bastián</span>
                     </span>
-                  </h1>
+                </h1>
                 <h4 class="mb-4">Tu próximo desarrollador y diseñador web.</h4>
                 <div class="hero__btn--wrapper">
-                    <a href="#"class="btn__container btn__container--borde text-center" >
+                    <a href="#form"class="btn__container btn__container--borde text-center" >
                         <span class="gradiente__texto">Hablemos</span>
                     </a>
-                    <a href="#" class="gradiente__texto">> Proyectos realizados</a>
+                    <a href="#trabajos" class="gradiente__texto">> Proyectos realizados</a>
                 </div>
             </div>
         </div>
@@ -420,19 +420,19 @@
                 <div class="form__col form__col-l">
                     <h3 class="mb-2">Formulario de contacto</h3>
                     <p class="mb-4">Rellena este pequeño formulario para contactarte conmigo. Responderé apenas me sea posible.</p>
-                    <form class="formulario__contacto" action="">
-                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre">
-                        <input placeholder="Correo" class="formulario__input" type="email" id="correo">
-                        <textarea placeholder="Mensaje" class="formulario__textarea" name="textarea" id="" cols="30" rows="10"></textarea>
-                        <button class="formulario__btn" type="submit">Enviar mensaje</button>
+                    <form class="formulario__contacto" id="formulario">
+                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre" name="name">
+                        <input placeholder="Correo" class="formulario__input" type="email" id="correo" name="email">
+                        <textarea placeholder="Mensaje" class="formulario__textarea" name="textarea" id="" cols="30" rows="10" name="message"></textarea>
+                        <input id="form__btn" class="formulario__btn" type="submit" value="Enviar mensaje">
                     </form>
                 </div>
                 <div class="form__col form__col-r">
                     <h3>¿No te acomoda?</h3>
                     <p><strong>También puedes contactarme a través de los siguientes medios:</strong></p>
                     <ul>
-                        <li>+56 9 3718 2566</li>
-                        <li>ba.montes@duocuc.cl</li>
+                        <li><i class="fa-solid fa-phone"></i> +56 9 3718 2566</li>
+                        <li><i class="fa-solid fa-envelope"></i> ba.montes@duocuc.cl</li>
                     </ul>
                     <ul class="form__lista--iconos">
                         <li></li>
@@ -440,6 +440,15 @@
                     </ul>
                 </div>
             </div>
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("vsw7TGagG_qo-0QKs");
+            })();
+            </script>
+
         </div>
     </section>
 

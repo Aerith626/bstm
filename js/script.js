@@ -15,7 +15,9 @@ anime.timeline({loop: false})
 
 window.addEventListener('load', function () {
   new Glider(document.querySelector('.slider__lista'), {
-    slidesToShow: 1.25,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    scrollLock: true,
     dragVelocity: 9,
     duration: .3,
     draggable: true,
@@ -133,3 +135,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Popup
+
+var formBtn = document.getElementById('form__btn');
+document.getElementById('formulario').addEventListener('submit', function(event) {
+  event.preventDefault;
+  formBtn.value = 'Enviando...';
+
+  const serviceID = 'service_0dxj06y';
+  const templateID = 'template_mb5oj6k';
+
+  emailjs.sendForm(serviceID, templateID, this)
+  .then(()=> {
+    formBtn.value = 'Enviar Mensaje';
+  }), (err) => {
+    formBtn.value = 'Enviar Mensaje';
+    alert(JSON.stringify(err));
+  }
+});
