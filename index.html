@@ -41,13 +41,11 @@
     <section id="hero" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
         <div class="container" >
             <div class="hero__contenido">
-                <h1 class="hero__titulo">
-                    <span class="hero__titulo--texto">
-                      <span class="letters">Hola, soy Bastián</span>
-                    </span>
+                <h1 data-aos="fade-right" data-aos-duration="600" data-aos-delay="300" data-aos-once="true">
+                    Hola, soy Bastián
                 </h1>
-                <h4 class="mb-4">Tu próximo desarrollador y diseñador web.</h4>
-                <div class="hero__btn--wrapper">
+                <h4 class="mb-4" data-aos="fade-right" data-aos-duration="800" data-aos-delay="700" data-aos-once="true">Tu próximo desarrollador y diseñador web.</h4>
+                <div class="hero__btn--wrapper" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100" data-aos-once="true">
                     <a href="#form"class="btn__container btn__container--borde text-center" >
                         <span class="gradiente__texto">Hablemos</span>
                     </a>
@@ -422,9 +420,9 @@
                     <h3 class="mb-2">Formulario de contacto</h3>
                     <p class="mb-4">Rellena este pequeño formulario para contactarte conmigo. Responderé apenas me sea posible.</p>
                     <form class="formulario__contacto" id="formulario">
-                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre" name="name">
-                        <input placeholder="Correo" class="formulario__input" type="email" id="correo" name="email" >
-                        <textarea placeholder="Mensaje" class="formulario__textarea" id="" cols="30" rows="10" name="message"></textarea>
+                        <input placeholder="Nombre" class="formulario__input" type="text" id="nombre" name="name" required minlength="2">
+                        <input placeholder="Correo" class="formulario__input" type="email" id="correo" name="email" required>
+                        <textarea placeholder="Mensaje" class="formulario__textarea" id="mensaje" cols="30" rows="6" name="message" minlength="4"required></textarea>
                         <input id="form__btn" class="formulario__btn" type="submit" value="Enviar mensaje">
                     </form>
                     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -457,9 +455,6 @@
     
 </body>
 
-
-<!-- Anime JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Glider JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js" integrity="sha512-tHimK/KZS+o34ZpPNOvb/bTHZb6ocWFXCtdGqAlWYUcz+BGHbNbHMKvEHUyFxgJhQcEO87yg5YqaJvyQgAEEtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Animate on Scroll -->

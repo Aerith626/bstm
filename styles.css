@@ -251,23 +251,6 @@ section {
     height: 64px;
 }
 
-/* Título */
-
-.hero__titulo {
-    position: relative;
-  }
-  
-.hero__titulo .hero__titulo--texto {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-  
-.hero__titulo .letra {
-    display: inline-block;
-}
-
-
 /* Contenido Hero */
 
 .hero__contenido {
@@ -603,10 +586,19 @@ section {
     font-size: 14px;
     color: #696969;
     margin-bottom: 12px;
+    resize: none;
+}
+.error {
+    border: 2px solid rgb(207, 0, 69);
 }
 
+.ok {
+    border: 2px solid rgb(27, 170, 68);
+}
+
+
 .formulario__input:focus, .formulario__textarea:focus {
-    border: 2px solid #1a6692;
+    border: 3px solid #24333b;
     outline: none;
 }
 
@@ -624,6 +616,7 @@ section {
     cursor: pointer;
     margin-top: 2em;
 }
+
 
 
 

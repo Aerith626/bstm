@@ -1,16 +1,3 @@
-// Texto animado
-var textWrapper = document.querySelector('.hero__titulo .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letra'>$&</span>");
-
-anime.timeline({loop: false})
-  .add({
-    targets: '.hero__titulo .letra',
-    translateY: ["1.2em", 0],
-    translateZ: 0,
-    duration: 1000,
-    delay: (el, i) => 60 * i
-  });
-
 //Slider
 
 window.addEventListener('load', function () {
@@ -134,22 +121,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// Popup
+// Validacion formulario y emailjs
 
-var formBtn = document.getElementById('form__btn');
-document.getElementById('formulario').addEventListener('submit', function(event) {
-  event.preventDefault();
-  formBtn.value = 'Enviando...';
-
-  const serviceID = 'service_0dxj06y';
-  const templateID = 'template_mb5oj6k';
-
-  emailjs.sendForm(serviceID, templateID, this)
-  .then(()=> {
-    formBtn.value = 'Enviar Mensaje';
-    alert('Mensaje enviado correctamente');
-  }), (err) => {
-    formBtn.value = 'Enviar Mensaje';
-    alert(JSON.stringify(err));
-  }
-});
+  var formBtn = document.getElementById('form__btn')
+  var form = document.getElementById('formulario');
+  orm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    formBtn.value = 'Enviando...';
+    const serviceID = 'service_0dxj06y';
+    const templateID = 'template_mb5oj6k';
+    
+    emailjs.sendForm(serviceID, templateID, this)
+    .then(()=> {
+      formBtn.value = 'Enviar Mensaje';
+      alert('Mensaje enviado correctamente');
+    }), (err) => {
+      formBtn.value = 'Enviar Mensaje';
+      alert(JSON.stringify(err));
+    }
+  });
