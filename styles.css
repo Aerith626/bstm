@@ -121,6 +121,7 @@ img {
 .btn__container--borde {
     border: 4px solid #F57E4F;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,.25);
+    position: relative;
 }
 
 .gradiente__texto {
@@ -413,6 +414,69 @@ section {
     margin-bottom: 2em;
 }
 
+.trabajos__wrap--btn {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.btn__git {
+    border-radius: 50%;
+    border: 4px solid #F57E4F;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px 0 rgba(25, 58, 76, 0.25);
+    transition: ease-out 200ms all;
+    position: relative;
+}
+
+.btn__git i {
+    font-size: 1.5rem;
+    margin: auto 0;
+    color: #F57E4F;
+}
+
+.btn__git::after, .btn__container--borde::after {
+    content: '';
+    border-radius: 100vmax;
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    box-shadow: 0 10px 20px 0 rgba(25, 58, 76, 0.4);
+    transition: 200ms ease-out opacity;
+}
+
+.btn__git::before {
+    content: 'Repositorio en GitHub';
+    position: absolute;
+    bottom: 50px;
+    text-transform: initial;
+    letter-spacing: 0;
+    background: rgb(50, 50, 50);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: 200ms ease-out opacity;
+}
+
+.btn__git:hover::after, .btn__git:hover::before, .btn__container--borde:hover::after {
+    transition: ease-in 200ms opacity;
+    opacity: 1;
+}
+
+.btn__figma::before {
+    content: 'Maquetado en Figma';
+}
+
+
 /* Funcionalidad paginacion */
 
 
@@ -598,7 +662,7 @@ section {
 
 
 .formulario__input:focus, .formulario__textarea:focus {
-    border: 3px solid #24333b;
+    border: 3px solid hwb(201 14% 77%);
     outline: none;
 }
 
