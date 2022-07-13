@@ -679,9 +679,14 @@ section {
     padding: 1em;
     cursor: pointer;
     margin-top: 2em;
+    transition: 200ms ease-in all;
 }
 
-
+.formulario__btn:hover {
+    background: #F57E4F;
+    color: #fff;
+    transition: 200ms ease-in all;
+}
 
 
 
