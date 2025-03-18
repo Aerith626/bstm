@@ -1,40 +1,5 @@
 //Slider
 
-window.addEventListener('load', function () {
-  new Glider(document.querySelector('.slider__lista'), {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    scrollLock: true,
-    dragVelocity: 9,
-    duration: .3,
-    draggable: true,
-    arrows: {
-      prev: '.herramientas__slider--anterior',
-      next: '.herramientas__slider--siguiente'
-    },
-    responsive: [
-      {
-        // screens greater than >= 775px
-        breakpoint: 775,
-        settings: {
-          // Set to `auto` and provide item width to adjust to viewport
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          itemWidth: 150,
-          duration: 0.2
-        }
-      },{
-        // screens greater than >= 1024px
-        breakpoint: 1180,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          duration: 0.2
-        }
-      }
-    ]
-  });
-});
 
 
 //Navbar responsive
@@ -67,7 +32,7 @@ let navBar = document.querySelector('header')
 let seccion1 = document.querySelector('#hero');
 
 let opciones1 = {
-  rootMargin: "-750px 0px 0px 0px"
+  rootMargin: "-650px 0px 0px 0px"
 };
 
 let observador1 = new IntersectionObserver(function(

@@ -2,11 +2,6 @@
      font-family: 'DM Sans', sans-serif;
     font-family: 'Lexend', sans-serif; 
 
-    Regular: 400
-    Medium: 500
-    Semibold: 600
-    Bold: 700
-    ExtraBold: 800
 */
 
 /* Box sizing, margenes y padding */
@@ -94,7 +89,7 @@ p {
     font-size: 1rem;
     font-weight: 400;
     color: var(--p-clr);
-    line-height: 1.7em;
+    line-height: 1.5em;
     
 }
 
@@ -187,6 +182,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 0;
 }
 
 .h2--nav {
@@ -221,8 +217,9 @@ section {
 .hero__nav--items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    gap: 2rem;
     width: 80%;
 }
 
@@ -259,7 +256,7 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    height: 100vh;
+    height: 85vh;
 }
 
 .hero__btn--wrapper {
@@ -273,15 +270,20 @@ section {
 .acercade__flex {
     display: flex;
     flex-direction: row;
+    gap: 3rem;
 }
-
+/* 
 .acercade__flex > div{
     width: 50%;
-    /* Remover en móviles */
     padding-right: 5em;
+} */
+
+.acercade__mi {
+    flex: 6;
 }
 
 .acercade__certif {
+    flex: 7;
     background-image: url('img/bg-item1.png');
     background-size: 60%;
     background-repeat: no-repeat;
@@ -292,10 +294,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 .certificacion {
-    margin-bottom: 1em;
     margin-right: 2px;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
@@ -305,11 +306,17 @@ section {
     background: #fff;
     display: inline-block;
     box-shadow: 0 2px 8px 1px rgba(0,0,0,.2);
+    user-select: none;
 }
 
 
 /* Slider */
 
+.slider__lista {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 2rem;
+}
 .herramientas__titulo {
     margin-bottom: 4rem;
 }
@@ -374,13 +381,12 @@ section {
 }
 
 .proceso__container--contenido {
-    padding: 1.5rem;
+    padding: 2rem;
     margin: 1em;
-    border: 4px solid transparent;
-    border-radius: 26px;
-    background: linear-gradient(#fff, #fff) padding-box, var(--grad-suave) border-box;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    border-radius: 16px;
     aspect-ratio: 1;
-    
 }
 
 /* Trabajos realizados */
@@ -695,6 +701,11 @@ section {
 /* Tablets */
 
 @media screen and (max-width: 1024px) {
+    
+    .slider__lista {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
     .hero__nav--items {
         position: absolute;
         right: 0;
@@ -761,6 +772,13 @@ section {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .slider__lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+}
 
 /* Celulares */
 
